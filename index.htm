@@ -318,6 +318,7 @@
 
 		<script type="text/javascript">
 
+			// today
 			var day;
 			switch (new Date().getDay()) {
 			    case 0:
@@ -348,7 +349,35 @@
 
 
 		<script type="text/javascript">
+			var Hellofy = {
+				hellos: ['Hello', 'Mirëdita', '안녕하세요', 'Moikka', 'ታዲያስ', 'Parev', 'مرحبا', 'Zdravei', 'Aloha', 'Hola', 'שלום', 'Привет', 'Merhaba', 'Helô', 'Tere', 'Hallo', '您好'],
+				cursor: 1,
+				start: function () {
+					setInterval(function() {
+						Hellofy.changeText();
+					}, 6000);
+				},
+				getText: function() {
+					Hellofy.cursor = Hellofy.cursor + 1;
+					if (Hellofy.cursor === Hellofy.hellos.length) {
+						Hellofy.cursor = 0;
+					}
+					return Hellofy.hellos[Hellofy.cursor]+ '!';
+				},
+				changeText: function() {
+					UI.hello.addClass('fade-out');
+					_.delay(function(){
+						UI.hello.text(Hellofy.getText());
+						UI.hello.removeClass('fade-out');
+					}, 800);
+				}
+			};
+		</script>
 
+
+		<script type="text/javascript">
+
+			// jargon
 			var day;
 			switch (new Date().getDay()) {
 			    case 0:
@@ -377,25 +406,7 @@
 
 		</script>
 
-		<!-- <script type="text/javascript">
-			var fruits, text, fLen, i;
 
-			fruits = ["Love", "Support", "Motivations", "Donations", "Breadbuyers"];
-			fLen = fruits.length;
-			text = "<ul>";
-			for (i = 0; i < fLen; i++) {
-			    text += fruits[i];
-			}
-			document.getElementById("jargon_change").innerHTML = text;
-		</script> -->
-
-		<!-- <script type="text/javascript">
-			var fruits = ["Love", "Motivations", "Donations", "Breadbuyers", "Support"];
-
-			fruits.forEach(function (item, index, array) {
-			  document.getElementById("jargon_change").innerHTML = fruits;
-			});
-		</script> -->
 
 		<script type="text/javascript">
 		  /* code that SPEAKs: toggle stuff */
