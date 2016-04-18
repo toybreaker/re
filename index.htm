@@ -48,27 +48,61 @@
 
 			}
 			.screen.a {background-color: hsla(200, 70%, 60%, 1);}
-			svg .a {fill: #52b1e0;}
-			.screen.b {background-color: hsla(200, 94%, 40%, 1);}
-			svg .b {fill: #067ab4;}
-			.screen.c {background-color: hsla(161, 79%, 40%, 1);}
-			svg .c {fill: rgba(25, 215, 155,1);}
-			.screen.d {background-color: hsla(10, 100%, 50%, 1);}
-			/*svg .d {fill: #ff2b00;}*/
-			.d .ani svg .d_color {
-				opacity:1;
-				fill: rgba(59, 232, 176, 0);
-				fill-opacity: 1;
-				stroke: hsla(10, 100%, 50%, 1);
-				stroke-width: 1;
-				stroke-opacity: 1;
+			.a_color {
+				 opacity:1;
+				 fill:rgba(0,0,0,0);
+				 fill-opacity:1;
+				 stroke: hsla(200, 70%, 80%, 1);
+				 stroke-width:2;
 			}
+			svg .a {fill: #52b1e0;}
+
+
+			.screen.b {background-color: hsla(200, 94%, 40%, 1);}
+			.b_color {
+				 opacity: 1;
+				 fill: rgba(0,0,0,0);
+				 fill-opacity: 1;
+				 stroke: hsla(200, 94%, 60%, 1);
+				 stroke-width: 2;
+			}
+			svg .b {fill: #067ab4;}
+
+			.screen.c {background-color: hsla(161, 79%, 40%, 1);}
+			.c_color {
+				 opacity: 1;
+				 fill: rgba(0,0,0,0);
+				 fill-opacity: 1;
+				 stroke: rgba(25, 215, 155, 1);
+				 stroke-width: 2;
+			}
+			svg .c {fill: rgba(25, 215, 155,1);}
+
+
+			.screen.d {background-color: black;}
+			.d .ani svg {
+				max-height:350px;
+			}
+			.d_color {
+				opacity:1;
+				fill: rgba(255,0,0,1);
+				fill-opacity: 1;
+			}
+			.d_color_stroke {
+				opacity:1;
+				fill:rgba(0,0,0,0);
+				fill-opacity: 0;
+				stroke: rgba(255,0,0,1);
+				stroke-width:; 2;
+			}
+
+
 			.screen.e {background-color: hsla(27, 100%, 50%, 1);}
 			.e .ani svg .e_color {
 				opacity:1;
 				fill: rgba(59, 232, 176, 0);
 				fill-opacity: 1;
-				stroke: rgba(255, 255, 255, 1);
+				stroke: rgba(255, 255, 255, .5);
 				stroke-width: 1;
 				stroke-opacity: 1;
 			}
@@ -108,15 +142,7 @@
 				display: block;
 				margin: 0 auto;
 			}
-			.title {
-				font-size: 9vw;
-				line-height: 1.1;
-				font-weight: 200;
-				color: black;
-				position: relative;
-				z-index: 1;
-				padding: 0 1rem;
-			}
+
 
 			.ani {
 				position: absolute;
@@ -142,9 +168,20 @@
 			}
 			.hide { display: none;}
 
+			.title {
+				font-size: 9vw;
+				line-height: 1.1;
+				font-weight: 200;
+				color: black;
+				position: relative;
+				z-index: 1;
+				padding: 0 1rem;
+			}
+			.d .title {color: white;}
 			@media screen and (min-width: 480px) {
 					.title {font-size: 6vw;}
 			}
+
 
 		</style>
 
@@ -160,7 +197,30 @@
 							<?xml version="1.0" standalone="no"?>
 							<!-- Generator: SVG Circus (http://svgcircus.com) -->
 							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-							<svg id="SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle id="actor_5" cx="50" cy="60" r="35" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(58, 165, 220, 0.2)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_4" cx="50" cy="60" r="30" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(58, 165, 220, 0.4)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_3" cx="50" cy="60" r="25" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(58, 165, 220, 0.6)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_2" cx="50" cy="60" r="20" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(58, 165, 220, 0.8)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_1" cx="50" cy="60" r="15" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(58, 165, 220, 1)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:1500,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
+							<svg id="SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+
+
+								<g class="a_color">
+									<circle id="actor_5" cx="50" cy="60" r="35" stroke-opacity="0.2"></circle>
+								</g>
+
+								<g class="a_color">
+									<circle id="actor_4" cx="50" cy="60" r="30" stroke-opacity="0.4"></circle>
+								</g>
+
+								<g class="a_color">
+									<circle id="actor_3" cx="50" cy="60" r="25" stroke-opacity="0.6"></circle>
+								</g>
+
+								<g class="a_color">
+									<circle id="actor_2" cx="50" cy="60" r="20"  stroke-opacity="0.8"></circle>
+								</g>
+
+								<g class="a_color">
+									<circle id="actor_1" cx="50" cy="60" r="15" stroke-opacity="1"></circle>
+								</g>
+
+								<script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-e64d9a94-9be3-316f-659e-ced9334ffbe9").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:1500,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
 						</div>
 
 						<h1 class="title 1">Hi, I'm your</h1>
@@ -195,7 +255,25 @@
 						<?xml version="1.0" standalone="no"?>
 						<!-- Generator: SVG Circus (http://svgcircus.com) -->
 						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-						<svg id="SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle id="actor_5" cx="50" cy="60" r="35" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(6, 122, 180,  0.2)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_4" cx="50" cy="60" r="30" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(6, 122, 180,  0.4)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_3" cx="50" cy="60" r="25" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(6, 122, 180,  0.6)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_2" cx="50" cy="60" r="20" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(6, 122, 180, 0.8)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_1" cx="50" cy="60" r="15" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(6, 122, 180, 1)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:3000,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
+						<svg id="SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+
+							<g class="b_color">
+								<circle id="actor_5" cx="50" cy="60" r="35" stroke-opacity="0.2"></circle>
+							</g>
+							<g class="b_color">
+								<circle id="actor_4" cx="50" cy="60" r="30" stroke-width="2" stroke-opacity="0.4"></circle>
+							</g>
+							<g class="b_color">
+								<circle id="actor_3" cx="50" cy="60" r="25"  stroke-opacity="0.6"></circle>
+							</g>
+							<g class="b_color">
+								<circle id="actor_2" cx="50" cy="60" r="20" stroke-opacity="0.8"></circle>
+							</g>
+							<g class="b_color">
+								<circle id="actor_1" cx="50" cy="60" r="15" stroke-opacity="1"></circle>
+							</g>
+
+							<script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-65e5bff0-4cd9-1443-57b2-3120a8325f78").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:3000,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
 					</div>
 
 					<h1 class="title 1">I'm your</h1>
@@ -231,7 +309,25 @@
 						<?xml version="1.0" standalone="no"?>
 						<!-- Generator: SVG Circus (http://svgcircus.com) -->
 						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-						<svg id="SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle id="actor_5" cx="50" cy="60" r="35" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(25, 215, 155, 0.2)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_4" cx="50" cy="60" r="30" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(25, 215, 155, 0.4)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_3" cx="50" cy="60" r="25" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(25, 215, 155, 0.6)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_2" cx="50" cy="60" r="20" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(25, 215, 155, 0.8)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><circle id="actor_1" cx="50" cy="60" r="15" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(25, 215, 155, 1)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle><script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:20000,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
+						<svg id="SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+
+							<g class="c_color">
+								<circle id="actor_5" cx="50" cy="60" r="35" stroke-opacity="0.2"></circle>
+							</g>
+							<g class="c_color">
+								<circle id="actor_4" cx="50" cy="60" r="30" stroke-opacity="0.4"></circle>
+							</g>
+							<g class="c_color">
+								<circle id="actor_3" cx="50" cy="60" r="25"  stroke-opacity="0.6"></circle>
+							</g>
+							<g class="c_color">
+								<circle id="actor_2" cx="50" cy="60" r="20"  stroke-opacity="0.8"></circle>
+							</g>
+							<g class="c_color">
+								<circle id="actor_1" cx="50" cy="60" r="15" stroke-opacity="1"></circle>
+							</g>
+
+							<script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_1"),type:"circle",cx:50,cy:60,dx:30,dy:5,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_2"),type:"circle",cx:50,cy:60,dx:40,dy:5,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_3"),type:"circle",cx:50,cy:60,dx:50,dy:5,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_4"),type:"circle",cx:50,cy:60,dx:60,dy:5,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-6fdc7b8f-7093-8af0-0b13-2324dd469a0d").getElementById("actor_5"),type:"circle",cx:50,cy:60,dx:70,dy:5,opacity:1};var tricks={};tricks.trick_1=(function(_,t){t=(function(n){var r=1.70158;return(n-=1)*n*((r+1)*n+r)+1})(t)%1,t=t*1%1,t=0>t?1+t:t;var a=(_.node,-10*Math.cos(-90*Math.PI/180)),i=10*Math.sin(-90*Math.PI/180);a+=10*Math.cos((-90-360*t*1)*Math.PI/180),i-=10*Math.sin((-90-360*t*1)*Math.PI/180),_._tMatrix[4]+=a,_._tMatrix[5]+=i});var scenarios={};scenarios.scenario_1={actors: ["actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:20000,actorDelay:30,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]></script></svg>
 					</div>
 
 					<h1 class="title 1">your</h1>
@@ -268,20 +364,33 @@
 						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 						  <svg id="SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+<!--
+								<g id="actor_6">
+							    <circle cx="50" cy="50" r="20" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(0,0,0,0.05)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
 
-						    <circle id="actor_6" cx="50" cy="50" r="20" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.05)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
+								</g> -->
 
-						    <circle id="actor_5" cx="50" cy="50" r="45" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
+								<g id="actor_6">
+									<path class="d_color" d="M50,25c-13.8,0-25,11.2-25,25c0,13.801,11.2,25,25,25c13.801,0,25-11.199,25-25C75,36.2,63.801,25,50,25z
+										 M65.301,54.699h-2.35v4.707H34.698V40.601h28.253v4.7h2.35V54.699z M37.051,57.051h23.545V42.95H37.051V57.051z"/>
+								</g>
+								<g class="d_color_stroke">
+							    <circle id="actor_5" cx="50" cy="50" r="45" stroke-opacity="0.2"></circle>
+								</g>
+								<g class="d_color_stroke">
+							    <circle id="actor_4" cx="50" cy="50" r="40" stroke-opacity="0.4"></circle>
+								</g>
+								<g class="d_color_stroke">
+									<circle id="actor_3" cx="50" cy="50" r="35" stroke-opacity="0.6"></circle>
+								</g>
+								<g class="d_color_stroke">
+						    	<circle id="actor_2" cx="50" cy="50" r="30" stroke-opacity="0.8"></circle>
+								</g>
+								<g class="d_color_stroke">
+						    	<circle id="actor_1" cx="50" cy="50" r="25" stroke-opacity="1"></circle>
+								</g>
 
-						    <circle id="actor_4" cx="50" cy="50" r="40" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
-
-						    <circle id="actor_3" cx="50" cy="50" r="35" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
-
-						    <circle id="actor_2" cx="50" cy="50" r="30" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
-
-						    <circle id="actor_1" cx="50" cy="50" r="25" opacity="1" fill="rgba(0,0,0,0)" fill-opacity="1" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-opacity="1" stroke-dasharray=""></circle>
-
-						    <script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_1"),type:"circle",cx:50,cy:50,dx:50,dy:9,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_2"),type:"circle",cx:50,cy:50,dx:60,dy:9,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_3"),type:"circle",cx:50,cy:50,dx:70,dy:9,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_4"),type:"circle",cx:50,cy:50,dx:80,dy:9,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_5"),type:"circle",cx:50,cy:50,dx:90,dy:9,opacity:1};actors.actor_6={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_6"),type:"circle",cx:50,cy:50,dx:40,dy:9,opacity:1};var tricks={};tricks.trick_1=(function(t,i){i=(function(n){return n})(i)%1,i=0>i?1+i:i;var _=t.node;0.1>=i?_.setAttribute("opacity",i*(t.opacity/0.1)):i>=0.9?_.setAttribute("opacity",t.opacity-(i-0.9)*(t.opacity/(1-0.9))):_.setAttribute("opacity",t.opacity)});var scenarios={};scenarios.scenario_1={actors: ["actor_6","actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:2500,actorDelay:50,repeat:0,repeatDelay:1500};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]>
+						    <script type="text/ecmascript"><![CDATA[(function(){var actors={};actors.actor_1={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_1"),type:"circle",cx:50,cy:50,dx:50,dy:9,opacity:1};actors.actor_2={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_2"),type:"circle",cx:50,cy:50,dx:60,dy:9,opacity:1};actors.actor_3={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_3"),type:"circle",cx:50,cy:50,dx:70,dy:9,opacity:1};actors.actor_4={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_4"),type:"circle",cx:50,cy:50,dx:80,dy:9,opacity:1};actors.actor_5={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_5"),type:"circle",cx:50,cy:50,dx:90,dy:9,opacity:1};actors.actor_6={node:document.getElementById("SVG-Circus-456cedca-9360-b82e-569e-3b0c7dda461b").getElementById("actor_6"),type:"path",cx:50,cy:50,dx:40,dy:9,opacity:1};var tricks={};tricks.trick_1=(function(t,i){i=(function(n){return n})(i)%1,i=0>i?1+i:i;var _=t.node;0.1>=i?_.setAttribute("opacity",i*(t.opacity/0.1)):i>=0.9?_.setAttribute("opacity",t.opacity-(i-0.9)*(t.opacity/(1-0.9))):_.setAttribute("opacity",t.opacity)});var scenarios={};scenarios.scenario_1={actors: ["actor_6","actor_1","actor_2","actor_3","actor_4","actor_5"],tricks: [{trick: "trick_1",start:0,end:1}],startAfter:0,duration:2500,actorDelay:50,repeat:0,repeatDelay:1500};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a>r;r++){if(i=actors[o.actors[r]],i&&i.node&&i._tMatrix)for(f=0,m>=0&&(d=o.duration+o.repeatDelay,o.repeat>0&&m>d*o.repeat&&(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n>e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&&tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&&i.node&&i._tMatrix&&i.node.setAttribute("transform","matrix("+i._tMatrix.join()+")");_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()]]>
 								</script>
 							</svg>
 
@@ -292,7 +401,7 @@
 
 					<span class="logo">
 
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.5 55.5 100 100">
+						<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.5 55.5 100 100">
 							<path id="battery_outer" d="M50.5,65.5c-22.08,0-40,17.92-40,40s17.92,40,40,40s40-17.92,40-40S72.58,65.5,50.5,65.5z M74.982,113.02h-3.76v3.76v3.761
 							h-3.771h-37.67h-3.765v-3.761V94.221v-3.76h3.765h37.671h3.77v7.52h3.76V113.02L74.982,113.02z"/>
 
@@ -302,7 +411,7 @@
 							<rect id="2" x="44.821" y="97.98" fill="black" width="7.52" height="15.117"/>
 							<rect id="1" x="33.542" y="97.98" fill="black" width="7.52" height="15.117"/>
 
-						</svg>
+						</svg> -->
 
 					</span>
 
